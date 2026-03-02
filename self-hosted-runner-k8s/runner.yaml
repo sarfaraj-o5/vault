@@ -1,0 +1,14 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: k8s-action-runner 
+  namesapce: actions-runner-system
+spec:
+  replicas: 2
+  template: 
+    spec:
+      repository: vel/action-runner-p
+
+## kubectl create -f runner.yaml
+---
+
